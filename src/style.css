@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap');
+
+body{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.bg__img{
+    width: 100vw;
+    position: absolute;
+    background-size: cover;
+    box-shadow: inset 0 0 100px rgba(236, 2, 2, 0.8);
+
+  }
+
+.bg__conteudo{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 12% 5%;
+    width: 40%;
+    gap: 3px;
+}
+
+.bg__poster{
+    width: 78%;
+}
+
+.bg__text{
+    font-family: 'Inter', sans-serif;
+    color: aliceblue;
+    font-size: 1.38rem;
+    height: 600;
+}
+
+.bg__button{
+    display: flex;
+    gap:16px
+}
+
+.bg__button__play{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5%;
+    padding: 10px 33px;
+    margin-right: 5%;  
+    cursor: pointer; 
+    border-radius: 2%;
+    border: none;
+    gap: 8px;
+}
+
+.bg__button__play span{
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    height: 400;
+    
+}
+
+.bg__button__info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3%;
+    padding: 10px 33px;
+    background-color: rgba(87, 87, 87, 0.6);
+    border: none;
+    cursor: pointer;  
+    gap: 8px; 
+}
+
+.bg__button__info span{
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+}
+
+
+
