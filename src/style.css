@@ -11,31 +11,64 @@ body{
     background-color: black;
 }
 
-.cabecalho {
-    display: flex;
-    justify-content: space-between reverse;
-    padding: 1.5% 1%;
-	gap: 10px;
+/* Menu do site */
+
+header {
+  display: flex;
+  align-items: center;
 }
 
-.img__cabecalho{
-	width: 76px;
-   
+.cabecalho__logo img {
+  width: 5.8rem;
+  cursor: pointer;
 }
 
-.cabecalho__nav {
-	display: inline;
-	margin: 0 0 0 15px;
+.cabecalho__menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.697);
+  font-size: 0.85rem;
+  cursor: pointer;
 }
 
-
-.cabecalho__nav__link {
-    padding: 5px;
-	color: #fff;
-	font-size: 16px;
-	text-decoration: none;
+.cabecalho__menu ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
 }
 
+.cabecalho__menu ul li {
+  padding-right: 0.9rem;
+}
+
+.cabecalho__menu__esquerdo ul li:hover {
+  color: white;
+}
+
+.cabecalho__menu__direito {
+  color: white;
+  font-size: 20px;
+}
+
+.cabecalho__menu__direito ul li {
+  padding-right: 1.2rem;
+}
+
+.cabecalho__user {
+  display: flex;
+  align-items: center;
+}
+
+.cabecalho__user img {
+  width: 2rem;
+  margin-right: 0.5rem;
+  border-radius: 3px;
+}
+
+/* Corpo do site (background) */
 
 .app__background {
     height: 100vh;
@@ -66,7 +99,7 @@ body{
     width: 50%;
   }
 
-  .banner__poster{
+.banner__poster{
     width: 450px;
   }
   
@@ -93,7 +126,7 @@ body{
     
   }
   
-  .banner__btn--play {
+.bg__button__play {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -107,7 +140,7 @@ body{
     
   }
   
-  .banner__btn--play:hover {
+.bg__button__play:hover {
     background-color: rgba(255, 255, 255, 0.777);
   }
 
@@ -116,29 +149,23 @@ body{
   }
 
 .bg__button__info {
-    display: flex;
-    align-items: center;
-    
-    color: white;
-    padding: 0.6rem 2rem;
-    margin-right: 0.75rem;
-    font-weight: 600;
-    border-radius: 0.125rem;
-    background-color: rgba(109, 109, 110, 0.7);
-    font-family: inherit;
-    font-size: 100%;
-    border: solid transparent;
-    gap: 12px;
+  color: white;
+  padding: 0.6rem 2rem;
+  margin-right: 0.75rem;
+  font-weight: 600;
+  border-radius: 0.125rem;
+  background-color: rgba(109, 109, 110, 0.7);
+  font-family: inherit;
+  font-size: 100%;
+  border: solid transparent;
   }
+
   .bg__button__info:hover {
     background-color: rgba(109, 109, 110, 0.525);
   }
   
   .bg__button__info i {
     margin-right: 0.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
 

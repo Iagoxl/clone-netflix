@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="src/style.css">
 </head>
 <body>
@@ -12,18 +15,30 @@
 
 
     <header class="cabecalho">
-        <img class="img__cabecalho" src="img/logo.png" alt="logo_netflix">
-        <nav class="cabecalho__nav">
-            <a class="cabecalho__nav__link" href="">Início</a>
-            <a class="cabecalho__nav__link" href="">Séries</a>
-            <a class="cabecalho__nav__link" href="">Filmes</a>
-            <a class="cabecalho__nav__link" href="">Bombando</a>
-            <a class="cabecalho__nav__link" href="">Minha lista</a>
-        </nav>
-        
-        <div id="divBusca">
-            <input type="text" id="txtBusca" placeholder="Buscar..."/>
-            <img src="" id="btnBusca" alt="Buscar"/>
+        <div class="cabecalho__logo">
+            <img class="img__cabecalho" src="img/logo.png" alt="Logo netflix">
+        </div>
+        <div class="cabecalho__menu">
+            <div class="cabecalho__menu__esquerdo">
+                <ul>
+                    <li>Início</li>
+                    <li>Séries</li>
+                    <li>Filmes</li>
+                    <li>Bombando</li>
+                    <li>Minha lista</li>
+                </ul>
+            </div>
+
+        <div class="cabecalho__menu__direito">
+            <ul>
+                <li><i class="fa fa-search"></i></li>
+                <li><i class="fa fa-bell"></i></li>
+                <li class="cabecalho__user">
+                    <img src="img/user.png" alt="Avatar usuário" />
+                <i class="fa fa-sort-down"></i>
+              </li>
+            </ul>
+          </div>
         </div>
 
     </header>
@@ -36,15 +51,13 @@
             <span class="banner__subtitle"> Em uma penitenciária de última geração, um detento participa de um experimento com drogas  que controlam as emoções para um gênio da industria farmacêutica.</span>
 
             <div class="banner__btn">
-                <button class="banner__btn--play" type="submit">
-                     <i class="fas fa-play"></i> 
-                     <img class="img__info" src="img/play.png"alt="">  Assistir
+                <button class="bg__button__play">
+                     <i class="fa fa-play"></i> Assistir
                  </button>
                     
                  <button class="bg__button__info">  
-                     <i class="fas fa-thin fa-circle-info"></i> <img class="img__info" src="img/info.png"alt=""> Mais informações    
-                 </button>
-                    
+                     <i class="fa fa-thin fa-circle-info"></i> Mais informações    
+                 </button> 
             </div>    
         </div>
     </main>
